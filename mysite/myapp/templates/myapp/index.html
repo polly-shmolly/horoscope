@@ -1,0 +1,22 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+
+{% block content %}
+    <h1>Choose your sign</h1>
+    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'aries' %}">Aries</a>
+    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'taurus' %}">Taurus</a>
+    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'gemini' %}">Gemini</a>
+    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'cancer' %}">Cancer</a>
+    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'leo' %}">Leo</a>
+    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'virgo' %}">Virgo</a>
+    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'libra' %}">Libra</a>
+    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'scorpio' %}">Scorpio</a>
+    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'sagittarius' %}">Sagittarius</a>
+    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'capricorn' %}">Capricorn</a>
+    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'aquarius' %}">Aquarius</a>
+    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'pisces' %}">Pisces</a>
+{% endblock %}
