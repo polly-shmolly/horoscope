@@ -67,5 +67,23 @@ def pisces(request):
     return render(request, 'myapp/pisces.html', {'title': 'main', 'text': post})
 
 
+def add(request):
+    error = ''
+    if request.method == 'POST':
+        form = PostForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+        else:
+            error = 'Form has error'
+
+    form = PostForm()
+    context = {
+        'form': form,
+        'error': error
+    }
+    return render(request, 'add.html', context)
+
+
 
 

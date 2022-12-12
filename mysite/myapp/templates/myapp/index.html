@@ -7,16 +7,35 @@
 
 {% block content %}
     <h1>Choose your sign</h1>
-    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'aries' %}">Aries</a>
-    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'taurus' %}">Taurus</a>
-    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'gemini' %}">Gemini</a>
-    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'cancer' %}">Cancer</a>
-    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'leo' %}">Leo</a>
-    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'virgo' %}">Virgo</a>
-    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'libra' %}">Libra</a>
-    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'scorpio' %}">Scorpio</a>
-    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'sagittarius' %}">Sagittarius</a>
-    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'capricorn' %}">Capricorn</a>
-    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'aquarius' %}">Aquarius</a>
-    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'pisces' %}">Pisces</a>
+    <style>
+   .leftstr, .rightstr {
+    float: left; /* Обтекание справа */
+    width: 50%; /* Ширина текстового блока */
+   }
+   .rightstr {
+    float: right; /* Выравнивание по правому краю */
+   }
+
+  </style>
+    <p class="leftstr">
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'aries' %}">Aries</a><br>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'taurus' %}">Taurus</a><br>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'gemini' %}">Gemini</a><br>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'cancer' %}">Cancer</a><br>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'leo' %}">Leo</a><br>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'virgo' %}">Virgo</a><br>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'libra' %}">Libra</a><br>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'scorpio' %}">Scorpio</a><br>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'sagittarius' %}">Sagittarius</a><br>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'capricorn' %}">Capricorn</a><br>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'aquarius' %}">Aquarius</a><br>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'pisces' %}">Pisces</a><br>
+    </p>
+
+
+
+    <p class="rightstr">
+        <img src="https://www.wikihow.com/images/thumb/d/df/Know-Your-Horoscope-Step-1.jpg/v4-460px-Know-Your-Horoscope-Step-1.jpg.webp" alt="horoscope">
+    </p>
+
 {% endblock %}

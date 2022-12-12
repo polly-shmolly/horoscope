@@ -1,5 +1,7 @@
 from django.urls import path
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 urlpatterns = [
@@ -16,4 +18,7 @@ urlpatterns = [
     path('Capricorn', views.capricorn, name='capricorn'),
     path('Aquarius', views.aquarius, name='aquarius'),
     path('Pisces', views.pisces, name='pisces'),
-]
+    path('Add', views.add, name='add'),
+] + static(settings.STATIC_URL,
+           document_root=settings.STATIC_ROOT)
+
